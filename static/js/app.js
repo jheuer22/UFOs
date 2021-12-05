@@ -34,7 +34,7 @@ let filteredData = tableData;
 if (d3.select("#datetime").property("value"))
 {
   filters["datetime"]=d3.select("#datetime").property("value")
-  filteredData = filteredData.filter(row=> row.datetime === filters["date"]);
+  filteredData = filteredData.filter(row=> row.datetime === filters["datetime"]);
 }
 if (d3.select("#city").property("value"))
 {
